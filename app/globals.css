@@ -20,9 +20,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   display: inline-block;
+  @apply cursor-pointer;
 }
 
 /* Premium UI Utilities */

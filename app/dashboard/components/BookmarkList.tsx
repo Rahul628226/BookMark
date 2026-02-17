@@ -74,7 +74,7 @@ export default function BookmarkList({ initialBookmarks }: Props) {
                     ))}
                 </div>
                 <div className="relative">
-                    <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#666388] text-xl">search</span>
+                    <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#666388] text-xl cursor-default select-none">search</span>
                     <input
                         className="pl-10 pr-4 py-2.5 rounded-lg border border-[#dcdce5] bg-white w-full md:w-72 text-sm outline-none focus:ring-2 focus:ring-primary/10 transition-all shadow-sm"
                         placeholder="Search bookmarks..."
