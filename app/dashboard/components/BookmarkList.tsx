@@ -60,7 +60,7 @@ export default function BookmarkList({ initialBookmarks }: Props) {
 
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
                 <div className="flex items-center gap-3">
-                    {['All', 'Work', 'Personal'].map((filter) => (
+                    {['All'].map((filter) => (
                         <button
                             key={filter}
                             onClick={() => setActiveFilter(filter)}
