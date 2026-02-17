@@ -29,11 +29,9 @@ export default async function DashboardPage() {
             <Navbar />
             <main className="max-w-[1200px] mx-auto px-6 lg:px-20 py-10">
                 {/* Dashboard Header */}
+                {/* Dashboard Header - Moved count to client component for real-time updates */}
                 <div className="mb-10">
                     <h1 className="text-[#121118] text-4xl font-black leading-tight tracking-tight mb-2">My Bookmarks</h1>
-                    <p className="text-[#666388] text-lg">
-                        You have <span className="text-primary font-bold">{bookmarks?.length || 0}</span> saved links across your collection.
-                    </p>
                 </div>
 
                 {/* Add Bookmark Form */}

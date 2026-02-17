@@ -52,6 +52,12 @@ export default function BookmarkList({ initialBookmarks }: Props) {
 
     return (
         <>
+            <div className="mb-10">
+                <p className="text-[#666388] text-lg">
+                    You have <span className="text-primary font-bold">{bookmarks.length}</span> saved links across your collection.
+                </p>
+            </div>
+
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
                 <div className="flex items-center gap-3">
                     {['All', 'Work', 'Personal'].map((filter) => (
@@ -59,8 +65,8 @@ export default function BookmarkList({ initialBookmarks }: Props) {
                             key={filter}
                             onClick={() => setActiveFilter(filter)}
                             className={`px-5 py-2 text-sm font-semibold rounded-full border transition-all ${activeFilter === filter
-                                    ? 'bg-primary text-white border-primary shadow-sm shadow-primary/20'
-                                    : 'bg-white text-[#666388] border-[#dcdce5] hover:bg-white/80'
+                                ? 'bg-primary text-white border-primary shadow-sm shadow-primary/20'
+                                : 'bg-white text-[#666388] border-[#dcdce5] hover:bg-white/80'
                                 }`}
                         >
                             {filter}
